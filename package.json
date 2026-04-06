@@ -1,0 +1,19 @@
+{
+  "name": "practica-responsive-flex-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor src/ index.html 1234 --reload",
+    "build": "echo 'Build script'",
+    "deploy": "echo 'Deploy script'"
+  },
+  "keywords": [],
+  "author": "Dariel",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "type": "module",
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}
