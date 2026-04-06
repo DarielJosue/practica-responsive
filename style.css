@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  gap: 10px;
+  height: 100vh;
+}
+
+.box {
+  background: #ccc;
+  border: 1px solid #000;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-areas:
+      "A B C"
+      "D D D";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .A {
+    grid-area: A;
+  }
+  .B {
+    grid-area: B;
+  }
+  .C {
+    grid-area: C;
+  }
+  .D {
+    grid-area: D;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-areas:
+      "A A D D"
+      "B C D D";
+  }
+
+  .A {
+    grid-area: A;
+  }
+  .B {
+    grid-area: B;
+  }
+  .C {
+    grid-area: C;
+  }
+  .D {
+    grid-area: D;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D";
+    grid-template-columns: 1fr;
+  }
+
+  .A {
+    grid-area: A;
+  }
+  .B {
+    grid-area: B;
+  }
+  .C {
+    grid-area: C;
+  }
+  .D {
+    grid-area: D;
+  }
+}
